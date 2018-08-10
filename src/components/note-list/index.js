@@ -3,7 +3,7 @@ import NoteItem from '../note-item';
 
 export default class NoteList extends Component {
   render() {
-    const {notes, removeNote, updateNote} = this.props;  // so dont have to do "this.props"
+    const {notes, removeNote, updateNote, onComplete, handleContentChange, handleTitleChange} = this.props;  // so dont have to do "this.props"
     
     return(
       <Fragment>
@@ -15,6 +15,9 @@ export default class NoteList extends Component {
                   note={note}
                   handleRemoveNote={removeNote}
                   handleUpdateNote={updateNote}
+                  onComplete={this.handleSubmit}
+                  handleContentChange={handleContentChange}
+                  handleTitleChange={handleTitleChange}
                 />
               </li>
             )

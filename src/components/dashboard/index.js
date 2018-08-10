@@ -65,6 +65,8 @@ export default class Dashboard extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    console.log('I am being submitted');
+    
     this.addNote(this.state);
     this.setState({
       title: '',
@@ -82,13 +84,13 @@ export default class Dashboard extends Component {
           handleContentChange={this.handleContentChange}
           handleTitleChange={this.handleTitleChange}
         />
-        {/* {this.state.notes.length >0
-        && <NoteList notes={this.state.notes} onRemove={this.removeNote}
-        } */}
         <NoteList
           notes={this.state.notes}
           removeNote={this.removeNote}
           updateNote={this.updateNote}
+          onComplete={this.handleSubmit}
+          handleContentChange={this.handleContentChange}
+          handleTitleChange={this.handleTitleChange}
         />
 
       </Fragment>

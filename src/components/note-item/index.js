@@ -4,7 +4,7 @@ import NoteUpdateForm from '../note-update-form';
 export default class NoteItem extends Component {
  
   render() {
-    const {note, handleUpdateNote, handleRemoveNote} = this.props;
+    const {note, handleUpdateNote, handleRemoveNote, onComplete, handleContentChange, handleTitleChange} = this.props;
 
     let showEditingForm = () => handleUpdateNote({...note, editing: true});
     let hideEditingForm = () => handleUpdateNote({...note, editing: false});
@@ -17,6 +17,10 @@ export default class NoteItem extends Component {
         <button id={note.id} onClick={showEditingForm}>Update</button>
         <NoteUpdateForm
           show={note.editing}
+          onComplete={onComplete}
+          handleContentChange={handleContentChange}
+          handleTitleChange={handleTitleChange}
+          hideEditingForm={hideEditingForm}
         />
       </Fragment>
     );
