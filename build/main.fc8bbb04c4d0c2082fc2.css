@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0.5em; }
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif; }
+
+h1 {
+  padding: 0.5em; }
+
+form {
+  padding: 1em; }
+
+form input,
+form textarea,
+for button {
+  display: block;
+  margin: 1em; }
+
+span {
+  float: left;
+  margin-right: 1em; }
+

@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard/> (Snapshot Test) renders right 1`] = `
+Array [
+  <h1>
+    Notes
+  </h1>,
+  <form
+    onChange={[Function]}
+    onSubmit={[Function]}
+  >
+    <input
+      name="title"
+      placeholder="title"
+      value=""
+    />
+    <textarea
+      name="content"
+      placeholder="content"
+      value=""
+    />
+    <label>
+      <span>
+        editing
+      </span>
+      <input
+        name="editing"
+        type="checkbox"
+      />
+    </label>
+    <label>
+      <span>
+        completed
+      </span>
+      <input
+        name="completed"
+        type="checkbox"
+      />
+    </label>
+    <button
+      type="submit"
+    >
+      Create Note
+    </button>
+  </form>,
+  <ul />,
+]
+`;
+
+exports[`<Dashboard/> Snapshot Test renders correctly 1`] = `
+Array [
+  <h1>
+    Notes
+  </h1>,
+  <form
+    onChange={[Function]}
+    onSubmit={[Function]}
+  >
+    <input
+      name="title"
+      placeholder="title"
+      value=""
+    />
+    <textarea
+      name="content"
+      placeholder="content"
+      value=""
+    />
+    <label>
+      <span>
+        editing
+      </span>
+      <input
+        name="editing"
+        type="checkbox"
+      />
+    </label>
+    <label>
+      <span>
+        completed
+      </span>
+      <input
+        name="completed"
+        type="checkbox"
+      />
+    </label>
+    <button
+      type="submit"
+    >
+      Create Note
+    </button>
+  </form>,
+  <ul />,
+]
+`;
+
+exports[`<NoteCreateForm/> (Snapshot Test) renders right 1`] = `
+<form
+  onChange={[Function]}
+  onSubmit={[Function]}
+>
+  <input
+    name="title"
+    placeholder="title"
+    value=""
+  />
+  <textarea
+    name="content"
+    placeholder="content"
+    value=""
+  />
+  <label>
+    <span>
+      editing
+    </span>
+    <input
+      name="editing"
+      type="checkbox"
+    />
+  </label>
+  <label>
+    <span>
+      completed
+    </span>
+    <input
+      name="completed"
+      type="checkbox"
+    />
+  </label>
+  <button
+    type="submit"
+  >
+    Create Note
+  </button>
+</form>
+`;
