@@ -1,53 +1,22 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 29: To Do
+# 29: Component-composition
+
 ===
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas 
-  
-## Learning Objectives  
-* Students will learn about composition vs inheritance
-* Students will learn to compose react components using props
+### Author:
 
-## Requirements  
- 
-#### Feature Tasks 
-Refactor and add the following components 
+Tyler Confalone
 
-###### NoteUpdateForm 
-Create a NoteUpdateForm component that inherits a note through props and onSubmit is able to update the App's state with an updated note.
+### Description:
 
-###### Refactor the NoteItem to have the following behavior
-If the user double clicks on the notes content it should switch to the Edit View  
-* Default view  
-  * Display the notes content and a delete button
-  * Display a delete button that will remove the Note from the application's state
-* Edit View 
-  * Show the NoteUpdateForm and a Cancel Button
-    * onSubmit or click of the cancel button in NoteUpdateForm it should switch back to the default view
+This is a front-end REACT application that allows the user to make a list.  The user fills in the input and note boxes, than clicks the submit button.  From there the new note is submitted as a list item to the unordered list.  The user can also open up a field ot edit the notes that they currently have.  I hope you find my application useful, enjoy.
 
-###### App Component Tree
-Your components should be nested in the following layout  
-``` 
-App
-  NoteCreateForm
-  NoteList
-    NoteItem
-      NoteUpdateForm
-```
+### Instructions
 
-#### Test
-* Test NoteCreateForm
-  * Test your onChange handler
-  * Test your onSubmit handler
-* Test NoteItem
-  * Test the NoteItem's ability to remove a note from the App's state
-* Test NoteUpdateForm
-  * Test the NoteUpdatesForm's ability to update a note in the App's state
-
-#### Documentation  
-Write a description of the project in your README.md
+* fork and clone the repository
+* npm i
+* npm run watch (this should display the application in your browser)
+* type in your subject or title of the note you are creating
+* type the note that you would like to add to the list
+* click submit and watch it get added to your list
+* if you want to edit a note previously made you can double click on that notes content
+* edit your note how you see fit and hit submit or cancel (this will bring you back to the default page of the form)
