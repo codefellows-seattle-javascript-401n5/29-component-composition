@@ -1,0 +1,31 @@
+{
+  "name": "29-component-composition",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) 29: To Do ===",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamarushin/29-component-composition.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamarushin/29-component-composition/issues"
+  },
+  "homepage": "https://github.com/tamarushin/29-component-composition#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "uuid": "^3.3.2"
+  }
+}
